@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		/* COLORS */
+		--primary: #354F3B;
+		--cent: #FBD702;
+	}
+
+	body {
+		@apply font-montserrat;
+		overflow-x: hidden;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-background{
+	background: linear-gradient(318.75deg, #354F3B 8.3%, rgba(53, 79, 59, 0.501569) 55.38%, rgba(53, 79, 59, 0) 69.5%);
+}
+.hero-image-backgroud{
+	background: linear-gradient(180deg, rgba(24, 24, 24, 0) 61.6%, #000000 108.38%);
+}
+
+.hero-background2{
+	background: linear-gradient(145deg, #354F3B 8.3%, rgba(53, 79, 59, 0.501569) 55.38%, rgba(53, 79, 59, 0) 69.5%);
+}
+
